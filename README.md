@@ -19,7 +19,7 @@ The game announces the winner, loser, or if it's a draw.
 Installation 📥
 Make sure you have Python 3.x installed on your system.
 Clone this repository using:
-git clone https://github.com/YourUsername/My-great-codes.git
+https://github.com/HemanthM2006/My-great-codes
 
 Navigate to the folder:
 cd My-great-codes
