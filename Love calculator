@@ -1,0 +1,35 @@
+def calculate_love_score(name1,name2):
+    true_in_name_1 = 0
+    true_in_name_2 = 0
+    love_in_name_1 = 0
+    love_in_name_2 = 0
+    total_true = 0
+    total_love = 0
+    for i in name1:
+        if i == "T" or i == "R" or i == "U" or i == "E" or i == "t" or i == "r" or i == "u" or i == "e":
+            true_in_name_1 += 1 
+    for i in name2:
+        if i == "T" or i == "R" or i == "U" or i == "E" or i == "t" or i == "r" or i == "u" or i == "e":
+            true_in_name_2 += 1
+    
+    total_true = true_in_name_1 + true_in_name_2
+
+    for i in name1:
+        if i == "L" or i == "O" or i == "V" or i == "E" or i == "l" or i == "o" or i == "v" or i == "e":
+            love_in_name_1 += 1 
+    for i in name2:
+        if i == "L" or i == "O" or i == "V" or i == "E" or i == "l" or i == "o" or i == "v" or i == "e":
+            love_in_name_2 += 1
+    
+    total_love = love_in_name_1 + love_in_name_2
+
+    love_score = str(total_true) + str(total_love)
+
+    print(f"\n❤️ The total love score is {love_score} ❤️")
+
+
+print("💖 Welcome to the Love Calculator! 💖")
+name1 = input("Enter first name: ")
+name2 = input("Enter second name: ")
+
+calculate_love_score(name1,name2)
