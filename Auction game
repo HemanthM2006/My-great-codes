@@ -1,0 +1,33 @@
+logo = '''
+                         ___________
+                         \         /
+                          )_______(
+                          |"""""""|_.-._,.---------.,_.-._
+                          |       | | |               | | ''-.
+                          |       |_| |_             _| |_..-'
+                          |_______| '-' `'---------'` '-'
+                          )"""""""(
+                         /_________\\
+                       .-------------.
+                      /_______________\\
+'''
+print(logo)
+bids = {}
+
+while True:
+    name = input("Enter your name: ")
+    bid_amount = int(input("How much would you like to bid? $"))
+    bids[name] = bid_amount
+    yes_or_no = input("Is there any other bidders? Type yes or no: ").lower()
+    if yes_or_no == "no":
+        break
+    print("\n"*100)
+
+highest_bidder = None
+highest_bid = 0
+for bidder in bids:
+    if bids[bidder] > highest_bid:
+        highest_bid = bids[bidder]
+        highest_bidder = bidder
+
+print(f"Bidder {highest_bidder} has won with the bid {highest_bid}.")
